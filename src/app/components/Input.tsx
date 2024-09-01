@@ -1,6 +1,5 @@
 "use client";
-// import { Eye, EyeSlash } from "iconsax-react";
-import { useState } from "react";
+
 import { twMerge } from "tailwind-merge";
 
 interface IInput
@@ -9,15 +8,9 @@ interface IInput
     HTMLInputElement
   > {}
 
-interface ITextArea
-  extends React.DetailedHTMLProps<
-    React.TextareaHTMLAttributes<HTMLTextAreaElement>,
-    HTMLTextAreaElement
-  > {}
 
-type InputProps = ITextArea & IInput;
 
-interface IInputProps extends InputProps {
+interface IInputProps extends IInput {
   isTextArea?: boolean;
   label?: string;
   error?: string;

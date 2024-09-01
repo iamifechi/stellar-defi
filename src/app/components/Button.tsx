@@ -30,9 +30,9 @@ export function Button({
     <button
       {...props}
       className={twMerge(
-        `capitalize whitespace-nowrap flex flex-nowrap items-center place-items-center w-full text-xs md:text-sm cursor-pointer relative py-[11px] px-4 md:px-[19px] group transition-all duration-300 ease-out overflow-x-hidden min-h-[34px] border border-white/[0.06] bg-white/[0.06] focus:ring-white/[0.06] focus:ring-inset  hover:bg-white/[0.06] hover:text-white  disabled:pointer-events-none disabled:opacity-70 rounded-[5px]`,
+        `capitalize whitespace-nowrap flex flex-nowrap items-center place-items-center w-full text-xs md:text-sm cursor-pointer relative py-[11px] px-4 md:px-[19px] group transition-all duration-300 ease-out overflow-x-hidden min-h-[34px] border border-white/[0.06] bg-white/[0.06] focus:ring-white/[0.06] focus:ring-inset  hover:bg-fuchsia-700 hover:border-fuchsia-700 hover:text-white  disabled:pointer-events-none disabled:opacity-70 rounded-[5px]`,
         small ? "py-10 text-white" : "",
-        outline && "text-white bg-transparent ",
+        outline && "text-white hover:bg-transparent ",
         className
       )}
     >
@@ -67,7 +67,7 @@ export function SubmitButton({ children, loading, ...props }: Props) {
       className={twMerge(
         props.className,
         pending || loading
-          ? "bg-transparent border border-primary cursor-wait"
+          ? "bg-transparent border border-fuchsia-700 cursor-wait"
           : ""
       )}
     >
@@ -84,7 +84,7 @@ export function SubmitButton({ children, loading, ...props }: Props) {
             cy="12"
             r="10"
             stroke="currentColor"
-            stroke-width="4"
+            strokeWidth="4"
           ></circle>
           <path
             className="opacity-75"

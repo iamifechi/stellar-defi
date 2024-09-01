@@ -17,7 +17,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        "grow": "grow .5s linear",
+        "grow": "grow .4s linear",
       },
       keyframes: {
         grow: {
