@@ -11,15 +11,6 @@ export const BannerStats = () => {
           <p className="text-xs">Public Key:</p>
           <p>{defi?.keypair?.publicKey()}</p>
         </div>
-        <div className="flex justify-start  items-start flex-col gap-2">
-          <p className="text-xs">Balance:</p>
-          <p>
-            <span></span>
-            {defi?.balance && (
-              <span>{Number(defi.balance)?.toLocaleString()}</span>
-            )}
-          </p>
-        </div>
       </div>
       <div className="flex w-full text-start mx-auto p-4">
         <div className="flex justify-start items-start flex-col gap-2">

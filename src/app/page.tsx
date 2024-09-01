@@ -1,10 +1,10 @@
-import { TopHeader } from "./components";
-import { DefiProvider } from "./components/DefiContext";
-import { GenerateKeypairButton } from "./components/GenerateKeypairButton";
-import { FundAccountButton } from "./components/FundAccountButton";
-import { CreateLiquidityPool } from "./components/CreateLiquidityPool";
-import { BannerStats } from "./components/BannerStats";
-import { WithdrawFromPool } from "./components/WithdrawFromPool";
+import { TopHeader } from "../components";
+import { DefiProvider } from "../components/DefiContext";
+import { GenerateKeypairButton } from "../components/GenerateKeypairButton";
+import { FundAccountButton } from "../components/FundAccountButton";
+import { CreateLiquidityPool } from "../components/CreateLiquidityPool";
+import { BannerStats } from "../components/BannerStats";
+import { WithdrawFromPool } from "../components/WithdrawFromPool";
 
 export default function Home() {
   return (
